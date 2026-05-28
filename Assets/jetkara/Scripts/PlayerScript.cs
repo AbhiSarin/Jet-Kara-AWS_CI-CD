@@ -40,7 +40,7 @@ public class PlayerScript : MonoBehaviour
 		{
 			if (col.tag == "Score")
 			{
-				GameObject.FindObjectOfType<GameManager>().Score++;
+                Object.FindFirstObjectByType<GameManager>().Score++;
 				Destroy(col.gameObject);
 			}
 			else if (col.tag == "Finish")
